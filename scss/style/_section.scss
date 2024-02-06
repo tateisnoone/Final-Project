@@ -334,10 +334,118 @@
         margin-top: 21px;
       }
     }
-    // .bottomside img {
-    //   @media (max-width: 1300px) {
-    //     width: 99%;
-    //   }
-    // }
   }
+  margin-bottom: 100px;
+  @media (max-width: 700px) {
+    margin-bottom: 50px;
+  }
+}
+
+// section 3 - features
+
+.sec-3 {
+  .container {
+    @extend %mycontainer;
+    @include flex(column, space-between, flex-start, nowrap);
+    height: 492px;
+    @media (max-width: 1030px) {
+      height: 1140px;
+    }
+    @media (max-width: 700px) {
+      align-items: center;
+    }
+    .benefits {
+      align-self: center;
+      @include flex(column, space-between, center, nowrap);
+    }
+    h2 {
+      color: #282938;
+      font-family: Poppins, sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 64px; /* 133.333% */
+      text-align: center;
+      width: 630px;
+      margin-bottom: 50px;
+      @media (max-width: 700px) {
+        width: 90%;
+        font-size: 44px;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 588px) {
+        width: 95%;
+        font-size: 40px;
+      }
+      @media (max-width: 359px) {
+        font-size: 34px;
+      }
+    }
+    .forcards {
+      @include flex(row, space-between, flex-start, wrap);
+      gap: 15px;
+      @media (max-width: 1030px) {
+        @include flex(column, space-between, center, wrap);
+        gap: 30px;
+      }
+    }
+    .card {
+      @include flex(column, space-between, flex-start, nowrap);
+      background-color: $bggrey;
+      width: 32%;
+      height: 316px;
+      padding: 50px 32px 48px 48px;
+      @media (max-width: 1080px) {
+        padding: 45px 25px 40px 40px;
+      }
+      @media (max-width: 1030px) {
+        width: 59%;
+        padding: 50px 32px 48px 48px;
+      }
+      @media (max-width: 700px) {
+        width: 80%;
+      }
+      @media (max-width: 588px) {
+        width: 95%;
+        height: 330px;
+      }
+      @media (max-width: 370px) {
+        padding: 45px 30px 30px 48px;
+        height: 355px;
+      }
+      .fa-file-pen,
+      .fa-pen-ruler,
+      .fa-users {
+        color: #2405f2;
+        font-size: 29px;
+      }
+      h6 {
+        color: #282938;
+        font-family: Poppins, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; /* 150% */
+      }
+      p {
+        color: #282938;
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+      }
+      @media (max-width: 350px) {
+        h6 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  margin-bottom: 115px;
 }
