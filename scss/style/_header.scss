@@ -10,7 +10,7 @@ header {
     height: 92px;
 
     .navmenu {
-      width: 706px;
+      width: 590px;
       @include flex(row, space-between, center, nowrap);
       @media (max-width: 980px) {
         width: 200px;
@@ -22,7 +22,7 @@ header {
     }
     ul {
       @include flex(row, space-between, center, nowrap);
-      width: 473px;
+      width: 380px;
       @media (max-width: 980px) {
         display: none;
       }

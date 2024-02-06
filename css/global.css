@@ -159,7 +159,7 @@ header .container {
   height: 92px;
 }
 header .container .navmenu {
-  width: 706px;
+  width: 590px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -183,7 +183,7 @@ header .container ul {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  width: 473px;
+  width: 380px;
 }
 @media (max-width: 980px) {
   header .container ul {
