@@ -5,3 +5,71 @@
   align-items: $align;
   flex-wrap: $wrap;
 }
+// header
+
+@mixin header-a {
+  color: #bbbbcb;
+  font-family: $myfont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  transition-duration: 0.4s;
+}
+@mixin header-button {
+  width: 185px;
+  height: 60px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  color: #fff;
+  font-family: $myfont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  cursor: pointer;
+  transition-duration: 0.4s;
+  background-color: $bgdarkblue;
+}
+
+//section 1 - home
+
+@mixin home-h1 {
+  color: #fff;
+  font-family: $myfont;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px; /* 137.037% */
+}
+@mixin home-p {
+  width: 95%;
+  color: #cbcbce;
+  font-family: $myfont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+@mixin home-button {
+  width: 230px;
+  height: 64px;
+  color: #1b1c2b;
+  font-family: $myfont;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  border-radius: 41px;
+  cursor: pointer;
+  background: #fcd980;
+  transition-duration: 0.4s;
+}
+@mixin pricingbtn {
+  color: $bgwhite;
+  font-family: $myfont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
