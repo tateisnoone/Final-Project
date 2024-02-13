@@ -1,0 +1,10 @@
+footer {
+  height: 489px;
+  .bluefooter {
+    background-color: #1c1e53;
+    height: 397px;
+    .container {
+      @extend %mycontainer;
+    }
+  }
+}
