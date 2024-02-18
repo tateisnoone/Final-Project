@@ -3,8 +3,179 @@ footer {
   .bluefooter {
     background-color: #1c1e53;
     height: 397px;
+    padding-top: 104px;
+    @media (max-width: 525px) {
+      padding-top: 40px;
+    }
     .container {
+      @include flex(row, flex-start, flex-start, nowrap);
       @extend %mycontainer;
+      gap: 142px;
+      @media (max-width: 1000px) {
+        justify-content: space-between;
+        gap: 40px;
+      }
+      .fleft {
+        @include flex(column, space-between, flex-start, nowrap);
+        height: 294px;
+        width: 517px;
+        @media (max-width: 945px) {
+          width: 50%;
+        }
+        @media (max-width: 880px) {
+          width: 60%;
+        }
+        @media (max-width: 525px) {
+          width: 50%;
+          height: 357px;
+        }
+
+        p {
+          color: #f4f6fc;
+          font-family: $myfont;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 28px; /* 175% */
+          width: 75%;
+        }
+        .yeldiv {
+          @include flex(row, flex-start, flex-start, nowrap);
+          background-color: #fcd980;
+          width: 517px;
+          height: 95px;
+          padding-top: 18px;
+          padding-left: 37px;
+          padding-right: 37px;
+          gap: 29px;
+          @media (max-width: 945px) {
+            width: 100%;
+          }
+          @media (max-width: 892px) {
+            gap: 20px;
+          }
+          @media (max-width: 840px) {
+            @include flex(column, flex-start, flex-start, nowrap);
+            padding-top: 10px;
+            padding-left: 15px;
+            height: 130px;
+            gap: 0px;
+            h6 {
+              line-height: 10px;
+            }
+            p {
+              line-height: 10px;
+            }
+          }
+          @media (max-width: 525px) {
+            @include flex(row, flex-start, flex-start, nowrap);
+            height: 95px;
+            width: 170%;
+          }
+          .yelleft {
+            @media (max-width: 840px) {
+              width: 100%;
+            }
+          }
+          .yelright {
+            @media (max-width: 840px) {
+              width: 100%;
+            }
+          }
+          h6 {
+            color: #282938;
+            font-family: $myfont;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; /* 177.778% */
+          }
+          p {
+            color: #282938;
+            font-family: $myfont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 175% */
+            width: 100%;
+          }
+        }
+      }
+      .fright {
+        @include flex(column, space-between, flex-start, nowrap);
+        width: 399px;
+        gap: 20px;
+        @media (max-width: 525px) {
+          gap: 10px;
+        }
+
+        h2 {
+          color: #fff;
+          font-family: $myfont;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 64px; /* 133.333% */
+        }
+        p {
+          color: #f4f6fc;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px; /* 175% */
+          margin-bottom: 10px;
+        }
+        @media (max-width: 525px) {
+          h2 {
+            font-size: 32px;
+            line-height: 30px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .flogos {
+          @include flex(row, space-between, flex-start, nowrap);
+          width: 144px;
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .whitefooter {
+    .container {
+      @include flex(row, space-between, center, nowrap);
+      @extend %mycontainer;
+      height: 92px;
+      p {
+        color: #282938;
+        font-family: $myfont;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 175% */
+      }
+      .footernav {
+        @include flex(row, space-between, center, nowrap);
+        @media (max-width: 595px) {
+          display: none;
+        }
+        ul {
+          @include flex(row, space-between, center, nowrap);
+          width: 300px;
+          li {
+            color: #282938;
+            font-family: $myfont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 175% */
+          }
+        }
+      }
     }
   }
 }
