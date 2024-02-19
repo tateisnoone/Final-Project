@@ -1,5 +1,8 @@
 footer {
   height: 489px;
+  @media (max-width: 525px) {
+    height: 449px;
+  }
   .bluefooter {
     background-color: #1c1e53;
     height: 397px;
@@ -15,6 +18,9 @@ footer {
         justify-content: space-between;
         gap: 40px;
       }
+      @media (max-width: 405px) {
+        gap: 20px;
+      }
       .fleft {
         @include flex(column, space-between, flex-start, nowrap);
         height: 294px;
@@ -29,7 +35,9 @@ footer {
           width: 50%;
           height: 357px;
         }
-
+        @media (max-width: 335px) {
+          width: 70%;
+        }
         p {
           color: #f4f6fc;
           font-family: $myfont;
@@ -69,17 +77,56 @@ footer {
           }
           @media (max-width: 525px) {
             @include flex(row, flex-start, flex-start, nowrap);
-            height: 95px;
-            width: 170%;
+            height: 85px;
+            width: 199%;
+            gap: 15px;
+            padding-right: 10px;
+          }
+          @media (max-width: 370px) {
+            height: 70px;
+            width: 180%;
+            margin-left: 15px;
+            gap: 20px;
+          }
+          @media (max-width: 335px) {
+            width: 125%;
+            padding-right: 0px;
+            margin-left: 20px;
           }
           .yelleft {
+            .fa-envelope {
+              display: none;
+              margin-top: 15px;
+              margin-left: 35px;
+            }
             @media (max-width: 840px) {
               width: 100%;
             }
+            @media (max-width: 370px) {
+              p {
+                display: none;
+              }
+              .fa-envelope {
+                display: flex;
+              }
+            }
           }
           .yelright {
+            .fa-phone {
+              display: none;
+              margin-top: 15px;
+              margin-left: 35px;
+            }
             @media (max-width: 840px) {
               width: 100%;
+            }
+            @media (max-width: 370px) {
+              p {
+                display: none;
+              }
+              .fa-phone {
+                display: flex;
+              }
             }
           }
           h6 {
@@ -99,6 +146,16 @@ footer {
             line-height: 28px; /* 175% */
             width: 100%;
           }
+          @media (max-width: 370px) {
+            h6 {
+              font: 15px;
+              line-height: 24px;
+            }
+            p {
+              font: 14px;
+              line-height: 20px;
+            }
+          }
         }
       }
       .fright {
@@ -108,7 +165,9 @@ footer {
         @media (max-width: 525px) {
           gap: 10px;
         }
-
+        @media (max-width: 335px) {
+          width: 80px;
+        }
         h2 {
           color: #fff;
           font-family: $myfont;
@@ -119,7 +178,7 @@ footer {
         }
         p {
           color: #f4f6fc;
-          font-family: Poppins;
+          font-family: $myfont;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -135,11 +194,42 @@ footer {
             font-size: 14px;
           }
         }
+        @media (max-width: 358px) {
+          h2 {
+            font-size: 25px;
+            line-height: 20px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        @media (max-width: 335px) {
+          h2 {
+            font-size: 28px;
+            line-height: 37px;
+            display: none;
+          }
+          p {
+            display: none;
+          }
+        }
         .flogos {
           @include flex(row, space-between, flex-start, nowrap);
           width: 144px;
           i {
             font-size: 16px;
+          }
+          @media (max-width: 347px) {
+            width: 100%;
+          }
+          @media (max-width: 335px) {
+            i {
+              font-size: 32px;
+            }
+            height: 200px;
+            @include flex(column, space-around, center, nowrap);
+            margin-top: 50px;
+            width: 80px;
           }
         }
       }
@@ -150,6 +240,9 @@ footer {
       @include flex(row, space-between, center, nowrap);
       @extend %mycontainer;
       height: 92px;
+      @media (max-width: 525px) {
+        height: 50px;
+      }
       p {
         color: #282938;
         font-family: $myfont;
